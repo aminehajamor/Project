@@ -11,7 +11,40 @@ top: -30px;
 font-family: 'Lato', sans-serif;
 font-weight: 800;
 font-size: 3.5em;
-color: #E0D2B2;
+color: white;
 display: inline;
 
+}
+.Inventory{
+  display: block;
+  margin-left: 70%;
+  margin-right: 80%;
+  width: 20%;
+}
+#buy{
+	display: block;
+  margin-left: 70%;
+  margin-right: 80%;
+  width: 20%;
+}
+.chair {
+  position: absolute;
+  top: 70px;
+  right: 1100px;
+  width: 200px;
+  height: 250px;
+}
+.chairbuy{
+	position: absolute;
+  top: 320px;
+  right: 1200px;
+  width: 40px;
+  height: 20px;
+}
+.chairsell{
+	position: absolute;
+  top: 320px;
+  right: 1150px;
+  width: 40px;
+  height: 20px;
 }
