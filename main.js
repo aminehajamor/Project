@@ -34,3 +34,6 @@ var buyBook = function (){
 	}
 return "we dont have enough money" 
 }
+
+$("body").css("background-color", "yellow")
+
