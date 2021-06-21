@@ -1,5 +1,5 @@
 var makeCohort = function (numOfScreens,numOfBooks,numOfTables,numOfChairs,totalWealth,numOfStudents){
-	var obj{}
+	var obj={}
 	obj.screens = numOfScreens
 	obj.books = numOfBooks
 	obj.tables = numOfTables
@@ -7,8 +7,10 @@ var makeCohort = function (numOfScreens,numOfBooks,numOfTables,numOfChairs,total
 	obj.totalWealth = totalWealth
 	obj.student = numOfStudents
 	obj.buyScreen = buyScreen
-	obj.sellScreen = sellScreen
+	obj.sellScreen = sellDamagedScreen
 	obj.buyBook = buyBook
+	obj.displayChairs= displayChairs
+	return obj
 }
 var buyScreen = function (){
 	if(this.totalWealth >= 1200 ){
@@ -35,4 +37,6 @@ var buyBook = function (){
 return "we dont have enough money" 
 }
 
-$("#buy").onclick(makeCohort.)
+function displayChairs (){
+	return this.chairs
+}
