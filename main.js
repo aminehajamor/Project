@@ -1,10 +1,14 @@
-var makeCohort = function (numOfScreens,numOfBooks,numOfTables,numOfChairs,totalWealth,numOfStudents){
+var 
+var kresi = null
+var screenet = null
+var money = null
+var booket=null
+var makeCohort = function (numOfBooks,numOfTables,numOfChairs,totalWealth){
 	var obj={}
-	obj.screens = numOfScreens
 	obj.books = numOfBooks
 	obj.tables = numOfTables
 	obj.chairs = numOfChairs
-	obj.totalWealth = totalWealth
+	obj.totalWealth = numOfChairs
 	obj.buyScreen = buyScreen
 	obj.sellScreen = sellDamagedScreen
 	obj.buyBook = buyBook
@@ -17,28 +21,17 @@ var makeCohort = function (numOfScreens,numOfBooks,numOfTables,numOfChairs,total
 	obj.buyTable = buyTable
 	obj.displayTables=displayTables
 	obj.depositPerMonth= depositPerMonth
+	obj.displayTotalWealth = displayTotalWealth
+	x=obj.books
+	y=obj.totalWealth
 	return obj
 }
+var stock=makeCohort(10,5,6,12,3000)
 var depositPerMonth = function (){
 this.totalWealth + 4000
 alert("money added to your vault")
 }
-var buyScreen = function (){
-	if(this.totalWealth >= 1200 ){
-	 this.screens++
-	 this.totalWealth - 1200
-	 alert ("you bought a new screen check your total wealth")
-	}
-	alert ("we dont have enough money")
-}
-var sellDamagedScreen = function (){
-	if(this.screens > 0){
-		this.screens -- 
-		this.totalWealth + 800
-		"you sold a used screen"
-	}
-	alert("we are out of screens")
-}
+
 var buyBook = function (){
 	if(this.totalWealth > 20){
 		this.totalWealth - 20 
@@ -80,7 +73,7 @@ var displayScreens = function (){
 	alert ('you have ' + this.screens + ' screens')
 }
  var displayBooks = function () {
- 	alert('you have ' + this.book + " books")
+ 	alert('you have ' + x + " books")
  }
 
 var sellTable = function (){
@@ -101,5 +94,9 @@ var buyTable = function (){
 var displayTables = function (){
 	alert("you have " + this.tables + " tables")
 }
+var displayTotalWealth = function (){
+	alert("you have an amount of " + y + "TND" )
+}
 
-$("")
+$(".bookBuy").click(displayBooks)
+$("#buy").click(displayTotalWealth)
