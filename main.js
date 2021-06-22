@@ -36,7 +36,8 @@ var buyBook = function (){
 		booket++
 
 		alert("you bought a new book")
-	}else{
+	}
+	else{
 alert( "we dont have enough money") 
 }
 }
@@ -45,9 +46,11 @@ var sellBook = function(){
 		booket--
 		money+= 10
 		alert( "you sold an old book")
-	}else{
+	}
+	else{
 	alert("we are out of books")
-}}
+}
+}
 
 var displayChairs = function  (){
 	alert("you have " + kresi + " chairs")
@@ -57,7 +60,8 @@ var sellChair = function (){
 		kresi--
 		money+= 50
 		alert('you sold an old chair')
-	}else{
+	}
+	else{
 	alert("we are out of chairs")
 }
 }
@@ -67,7 +71,8 @@ var buyChair = function (){
 		kresi++
 		money-= 90
 		alert("you bought a new chair")
-	}else{
+	}
+	else{
 	alert("we dont have enough money")
 
 	}
@@ -83,7 +88,8 @@ var sellTable = function (){
 		twawil--
 		money-= 40
 		alert('you sold an old table')
-	}else{
+	}
+	else{
 	alert("we are out of tables")
 }
 }
@@ -92,7 +98,8 @@ var buyTable = function (){
 		money-= 60 
 		twawil++
 		alert("you bought a new table")
-	}else{
+	}
+	else{
 	alert("we dont have enough money")
 }
 }
