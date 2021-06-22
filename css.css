@@ -17,37 +17,45 @@ display: inline;
 }
 .Inventory{
   display: block;
-  margin-left: 70%;
   margin-right: 80%;
   width: 100px;
 }
 #buy{
- position: absolute;
-top: 360px;
-right: 380px;
-  width: 70px;
+	position: absolute;
+	top :320px;
+	right:315px;
+	border-radius: 8px;
+width: 70px;
   height: 50px
+  color: #000000;
+background: #993399;
 }
 .chair {
   position: absolute;
-  top: 70px;
-  right: 1050px;
-  width: 300px;
-  height: 300px;
+  top: 130px;
+  right: 1100px;
+  width: 200px;
+  height: 200px;
 }
 .chairbuy{
+	border-radius: 8px;
 	position: absolute;
-  top: 370px;
+  top: 385px;
   right: 1200px;
   width: 40px;
   height: 20px;
+color: #000000;
+background: #993399;
 }
 .chairsell{
+	border-radius: 8px;
 	position: absolute;
-  top: 370px;
+  top: 385px;
   right: 1150px;
   width: 40px;
   height: 20px;
+  color: #000000;
+background: #993399;
 }
 #mouse{
 position: absolute;
@@ -57,18 +65,24 @@ width: 200px;
 height: 200px;
 }
 .mouseSell{
+	border-radius: 8px;
 	position: absolute;
 top: 760px;
 right: 320px;
   width: 40px;
   height: 20px;
+  color: #000000;
+background: #993399;
 }
 .mouseBuy{
+	border-radius: 8px;
 	position: absolute;
 top: 760px;
 right: 370px;
   width: 40px;
   height: 20px;
+  color: #000000;
+background: #993399;
 }
 .books{
 	position: absolute;
@@ -78,39 +92,54 @@ right: 1100px;
   height: 150px;
 }
 .bookBuy{
+	border-radius: 8px;
 	position: absolute;
 top: 720px;
 right: 1200px;
   width: 40px;
   height: 20px;
+  color: #000000;
+background: #993399;
 }
 .bookSell{
+	border-radius: 8px;
 position: absolute;
 top: 720px;
 right: 1150px;
   width: 40px;
   height: 20px;
+  color: #000000;
+background: #993399;
 }
 .checkChair{
+	border-radius: 8px;
 	position: absolute;
-top: 390px;
+top: 405px;
 right: 1160px;
   width: 60px;
   height: 50px;
+  color: #000000;
+background: #993399;
 }
 .checkTables{
+	border-radius: 8px;
 	position: absolute;
 top: 780px;
 right: 340px;
   width: 60px;
   height: 50px;
+  color: #000000;
+background: #993399;
 }
 .checkBook{
+	border-radius: 8px;
 	position: absolute;
 top: 740px;
 right: 1160px;
   width: 60px;
   height: 50px;
+  color: #000000;
+background: #993399;
 }
 #mouse{
 	border : 1px solid white;
@@ -126,6 +155,12 @@ right: 1160px;
 	border : 1px solid white;
 }
 .bginventory{
-	margin-bottom: 
-	mar
+	position: absolute;
+	top : -50px;
+}
+.img2{
+    float: right;
+    padding: 8%;
+    padding-right: 20%;
+    position: relative;
 }
