@@ -23,7 +23,7 @@ display: inline;
 }
 #buy{
  position: absolute;
-top: 280px;
+top: 340px;
 right: 380px;
   width: 70px;
   height: 50px
@@ -107,7 +107,7 @@ right: 340px;
 }
 .checkBook{
 	position: absolute;
-top: 590px;
+top: 580px;
 right: 1170px;
   width: 60px;
   height: 50px;

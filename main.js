@@ -8,13 +8,10 @@ var makeCohort = function (numOfBooks,numOfTables,numOfChairs,totalWealth){
 	obj.tables = numOfTables
 	obj.chairs = numOfChairs
 	obj.totalWealth = numOfChairs
-	obj.buyScreen = buyScreen
-	obj.sellScreen = sellDamagedScreen
 	obj.buyBook = buyBook
 	obj.displayChairs= displayChairs
 	obj.sellChair = sellChair
 	obj.buyChair = buyChair
-	obj.displayScreens = displayScreens
 	obj.displayBooks = displayBooks
 	obj.sellTable = sellTable
 	obj.buyTable = buyTable
@@ -27,7 +24,7 @@ var makeCohort = function (numOfBooks,numOfTables,numOfChairs,totalWealth){
 	twawil = obj.tables
 	return obj
 }
-var stock=makeCohort(10,5,6,12,3000)
+var stock=makeCohort(10,5,6,12,30000)
 var depositPerMonth = function (){
 money + 4000
 alert("money added to your vault")
@@ -73,7 +70,7 @@ var buyChair = function (){
 
 
  var displayBooks = function () {
- 	alert('you have ' + x + " books")
+ 	alert('you have ' + booket + " books")
  }
 
 var sellTable = function (){
@@ -95,9 +92,17 @@ var displayTables = function (){
 	alert("you have " + twawil + " tables")
 }
 var displayTotalWealth = function (){
-	alert("you have an amount of " + y + "TND" )
+	alert("you have an amount of " + money + "TND" )
 }
 
-$(".bookBuy").click(displayBooks)
 $("#buy").click(displayTotalWealth)
 $(".checkChair").click(displayChairs)
+$(".chairbuy").click(buyChair)
+$(".chairsell").click(sellChair)
+$(".checkChair").click(displayChairs)
+$(".mouseBuy").click(buyTable)
+$(".mouseSell").click(sellTable)
+$(".checkTables").click(displayTables)
+$(".bookBuy").click(buyBook)
+$(".bookSell").click(sellBook)
+$(".checkBook").click(displayBooks)
