@@ -1,6 +1,5 @@
-var 
+var twawil = null
 var kresi = null
-var screenet = null
 var money = null
 var booket=null
 var makeCohort = function (numOfBooks,numOfTables,numOfChairs,totalWealth){
@@ -22,77 +21,78 @@ var makeCohort = function (numOfBooks,numOfTables,numOfChairs,totalWealth){
 	obj.displayTables=displayTables
 	obj.depositPerMonth= depositPerMonth
 	obj.displayTotalWealth = displayTotalWealth
-	x=obj.books
-	y=obj.totalWealth
+	booket=obj.books
+	money=obj.totalWealth
+	kresi = obj.chairs
+	twawil = obj.tables
 	return obj
 }
 var stock=makeCohort(10,5,6,12,3000)
 var depositPerMonth = function (){
-this.totalWealth + 4000
+money + 4000
 alert("money added to your vault")
 }
 
 var buyBook = function (){
-	if(this.totalWealth > 20){
-		this.totalWealth - 20 
-		this.books++
+	if(money > 20){
+		money - 20 
+		booket++
 		alert("you bought a new book")
 	}
 alert( "we dont have enough money") 
 }
 var sellBook = function(){
-	if (this.book > 0){
-		this.book--
-		this.totalWealth - 10
+	if (booket > 0){
+		booket--
+		money - 10
 		alert( "you sold an old book")
 	}
 	alert("we are out of books")
 }
 
 var displayChairs = function  (){
-	alert("you have " + this.chairs + " chairs")
+	alert("you have " + kresi + " chairs")
 }
 var sellChair = function (){
-	if(this.chairs > 0){
-		this.chairs--
-		this.totalWealth + 50
+	if(kresi > 0){
+		kresi--
+		money + 50
 		alert('you sold an old chair')
 	}
 	alert("we are out of chairs")
 }
 
 var buyChair = function (){
-	if(this.totalWealth > 90){
-		this.chairs++
-		this.totalWealth - 90
+	if(money > 90){
+		kresi++
+		money - 90
 		alert("you bought a new chair")
 	}
 	alert("we dont have enough money")
 }
-var displayScreens = function (){
-	alert ('you have ' + this.screens + ' screens')
-}
+
+
  var displayBooks = function () {
  	alert('you have ' + x + " books")
  }
 
 var sellTable = function (){
-	if(this.tables > 0){
-		this.tables--
-		this.totalWealth -40
+	if(twawil > 0){
+		twawil--
+		money -40
 	}
 	alert("we are out of tables")
 }
 var buyTable = function (){
-	if(totalWealth> 60){
-		this.totalWealth - 60 
-		this.tables++
+	if(money> 60){
+		money - 60 
+		twawil++
 		alert("you bought a new table")
 	}
 	alert("we dont have enough money")
 }
 var displayTables = function (){
-	alert("you have " + this.tables + " tables")
+	alert("you have " + twawil + " tables")
 }
 var displayTotalWealth = function (){
 	alert("you have an amount of " + y + "TND" )
@@ -100,3 +100,4 @@ var displayTotalWealth = function (){
 
 $(".bookBuy").click(displayBooks)
 $("#buy").click(displayTotalWealth)
+$(".checkChair").click(displayChairs)
