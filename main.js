@@ -24,7 +24,7 @@ var makeCohort = function (numOfBooks,numOfTables,numOfChairs,totalWealth){
 	twawil = obj.tables
 	return obj
 }
-var stock=makeCohort(10,5,6,12,30000)
+var stock=makeCohort(10,5,6,30000)
 var depositPerMonth = function (){
 money + 4000
 alert("money added to your vault")
@@ -34,18 +34,20 @@ var buyBook = function (){
 	if(money > 20){
 		money-= 20 
 		booket++
+
 		alert("you bought a new book")
-	}
+	}else{
 alert( "we dont have enough money") 
+}
 }
 var sellBook = function(){
 	if (booket > 0){
 		booket--
-		money-= 10
+		money+= 10
 		alert( "you sold an old book")
-	}
+	}else{
 	alert("we are out of books")
-}
+}}
 
 var displayChairs = function  (){
 	alert("you have " + kresi + " chairs")
@@ -55,8 +57,9 @@ var sellChair = function (){
 		kresi--
 		money+= 50
 		alert('you sold an old chair')
-	}
+	}else{
 	alert("we are out of chairs")
+}
 }
 
 var buyChair = function (){
@@ -64,8 +67,10 @@ var buyChair = function (){
 		kresi++
 		money-= 90
 		alert("you bought a new chair")
-	}
+	}else{
 	alert("we dont have enough money")
+
+	}
 }
 
 
@@ -77,16 +82,19 @@ var sellTable = function (){
 	if(twawil > 0){
 		twawil--
 		money-= 40
-	}
+		alert('you sold an old table')
+	}else{
 	alert("we are out of tables")
+}
 }
 var buyTable = function (){
 	if(money> 60){
 		money-= 60 
 		twawil++
 		alert("you bought a new table")
-	}
+	}else{
 	alert("we dont have enough money")
+}
 }
 var displayTables = function (){
 	alert("you have " + twawil + " tables")
